@@ -51,8 +51,23 @@ return packer.startup(function(use)
 
     -- Community plugins
     -- Important (used by other plugins)
-    use "nvim-lua/popup.nvim"    -- An implementation of the Popup API from vim in Neovim
-    use "nvim-lua/plenary.nvim"  -- Useful lua functions used by lots of plugins
+    use "nvim-lua/popup.nvim"  -- An implementation of the Popup API from vim in Neovim
+    use "nvim-lua/plenary.nvim" -- Useful lua functions used by lots of plugins
+
+    -- Completion
+    use "hrsh7th/nvim-cmp" -- The completion plugin
+    use "hrsh7th/cmp-buffer" -- buffer completions
+    use "hrsh7th/cmp-path" -- path completions
+    use "hrsh7th/cmp-cmdline" -- cmdline completions
+    
+    -- Gneral snippet library
+    use "rafamadriz/friendly-snippets" -- a bunch of snippets to use
+
+    -- Lua
+    use "saadparwaiz1/cmp_luasnip" -- snippet completions
+    use "L3MON4D3/LuaSnip" --snippet engine
+    
+    -- Completion plugins
 
     -- Colorschemes
     use "lunarvim/onedarker"

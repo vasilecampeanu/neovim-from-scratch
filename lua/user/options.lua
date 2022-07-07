@@ -45,4 +45,3 @@ end
 -- Options using vim style
 vim.cmd [[set guicursor=i:block]]
 vim.cmd [[set guicursor=a:blinkon1]]
-vim.cmd [[hi Normal guibg=NONE ctermbg=NONE]]
