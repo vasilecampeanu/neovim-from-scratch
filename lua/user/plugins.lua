@@ -6,10 +6,10 @@ local install_path = fn.stdpath "data" .. "/site/pack/packer/start/packer.nvim"
 
 if fn.empty(fn.glob(install_path)) > 0 then
     PACKER_BOOTSTRAP = fn.system {
-        "git", 
-        "clone", 
-        "--depth", 
-        "1", 
+        "git",
+        "clone",
+        "--depth",
+        "1",
         "https://github.com/wbthomason/packer.nvim",
         install_path
     }
@@ -45,7 +45,7 @@ packer.init {
 -- Install your plugins here
 return packer.startup(function(use)
     -- My plugins here
-    
+
     -- Packer
     use "wbthomason/packer.nvim" -- Have packer manage itself
 
@@ -68,7 +68,7 @@ return packer.startup(function(use)
 
     -- Lua
     use "hrsh7th/cmp-nvim-lsp"
-    
+
     -- Completion plugins
     use "hrsh7th/cmp-nvim-lua"
 
