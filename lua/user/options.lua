@@ -28,7 +28,7 @@ local options = {
     splitright = true,                       -- force all vertical splits to go to the right of current window
     swapfile = false,                        -- creates a swapfile
     tabstop = 4,                             -- insert 2 spaces for a tab
-    termguicolors = false,                   -- set term gui colors (most terminals support this)
+    termguicolors = true,                    -- set term gui colors (most terminals support this)
     timeoutlen = 100,                        -- time to wait for a mapped sequence to complete (in milliseconds)
     undofile = true,                         -- enable persistent undo
     updatetime = 300,                        -- faster completion (4000ms default)
@@ -45,3 +45,4 @@ end
 -- Options using vim style
 vim.cmd [[set guicursor=i:block]]
 vim.cmd [[set guicursor=a:blinkon1]]
+vim.cmd [[hi Normal guibg=NONE ctermbg=NONE]]

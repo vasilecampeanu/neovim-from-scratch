@@ -1,3 +1,4 @@
+-- Configure namespace
 local fn = vim.fn
 
 -- Automatically install packer
@@ -44,9 +45,17 @@ packer.init {
 -- Install your plugins here
 return packer.startup(function(use)
     -- My plugins here
+    
+    -- Packer
     use "wbthomason/packer.nvim" -- Have packer manage itself
+
+    -- Community plugins
+    -- Important (used by other plugins)
     use "nvim-lua/popup.nvim"    -- An implementation of the Popup API from vim in Neovim
     use "nvim-lua/plenary.nvim"  -- Useful lua functions used by lots of plugins
+
+    -- Colorschemes
+    use "lunarvim/onedarker"
 
     -- Automatically set up your configuration after cloning packer.nvim
     -- Put this at the end after all plugins
