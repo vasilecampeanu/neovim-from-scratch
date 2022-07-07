@@ -1,4 +1,4 @@
--- General settings table
+-- Option table
 local options = {
     backup = false,                          -- creates a backup file
     clipboard = "unnamedplus",               -- allows neovim to access the system clipboard
@@ -21,7 +21,7 @@ local options = {
     showmode = false,                        -- we don't need to see things like -- INSERT -- anymore
     showtabline = 0,                         -- always show tabs
     sidescrolloff = 8,
-    signcolumn = "no",                      -- always show the sign column, otherwise it would shift the text each time
+    signcolumn = "no",                       -- always show the sign column, otherwise it would shift the text each time
     smartcase = true,                        -- smart case
     smartindent = true,                      -- make indenting smarter again
     splitbelow = true,                       -- force all horizontal splits to go below current window
@@ -42,5 +42,6 @@ for k, v in pairs(options) do
     vim.opt[k] = v
 end
 
--- Vim style settings
-vim.cmd "set guicursor=i:block"
+-- Options using vim style
+vim.cmd [[set guicursor=i:block]]
+vim.cmd [[set guicursor=a:blinkon1]]
